@@ -6,7 +6,7 @@
 }
 
 .content {
-    height: 700px;
+    height: auto;
     width: auto;
     display: grid;
     place-content: center;
@@ -18,10 +18,11 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    padding: 50px;
 }
 
 .networks a {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 25px;
     margin-left: 25px;
     margin-right: 25px;
