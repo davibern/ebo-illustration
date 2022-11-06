@@ -2,7 +2,8 @@
     font-family: 'Gluten', cursive;
     box-sizing: border-box;
     justify-content: center;
-    background-color: #FBDEE8
+    background-color: #FBDEE8;
+    border: 1px dashed blue;
 }
 
 .content {
@@ -12,7 +13,29 @@
     place-content: center;
 }
 
-.networks {
+.body {
+    height: auto;
+    width: auto;
+    display: flex;
+    place-content: center;
+}
+
+.menu {
+    height: auto;
+    width: 200px;
+    align-items: left;
+    justify-content: left;
+}
+
+.book {
+    height: auto;
+    width: auto;
+    display: grid;
+    align-items: right;
+    justify-content: right;
+}
+
+/*.networks {
     height: 30px;
     width: 300px;
     display: flex;
@@ -32,7 +55,7 @@
 
 .networks a:hover {
     transform: scale(2);
-}
+}*/
 
 .avatar {
     height: 300px;
@@ -46,7 +69,19 @@
     border-radius: 50%;
 }
 
-.buttons {
+.book {
+    height: 600px;
+    width: 800px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/la_caja_de_gatitos_home.jpg");
+    background-size: contain;
+    background-position: center center;
+    border-radius: 5%;
+}
+
+/*.buttons {
     display: grid;
     text-align: center;
 }
@@ -63,4 +98,4 @@
 .buttons a:hover {
     background-color: #ef9A9A;
     transition: 500ms;
-}
+}*/
