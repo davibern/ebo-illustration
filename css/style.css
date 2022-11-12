@@ -2,65 +2,53 @@
     font-family: 'Gluten', cursive;
     box-sizing: border-box;
     justify-content: center;
-    background-color: #FBDEE8
+    background-color: #FBDEE8;
 }
 
 .content {
     height: auto;
     width: auto;
-    display: grid;
     place-content: center;
 }
 
-.networks {
-    height: 30px;
-    width: 300px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 50px;
-}
-
-.networks a {
-    margin-bottom: 20px;
-    font-size: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    transition: transform .3s;
+.header {
+    text-align: center;
     color: #C36796;
 }
 
-.networks a:hover {
-    transform: scale(2);
-}
-
-.avatar {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 50px;
+.body {
+    height: auto;
+    width: auto;
     display: flex;
+    place-content: center;
+}
+
+.menu {
+    height: auto;
+    width: 150px;
     align-items: center;
-    background-image: url("../img/avatar_ebo_illustration.jpg");
-    background-size: cover; 
+    justify-content: center;
+    color: #C36796;
+}
+
+.book {
+    background-image: url("../img/la_caja_de_gatitos_home.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    background-size: contain;
+    width: 600px;
+    height: 500px;
 }
 
-.buttons {
+.networks {
+    width: auto;
     display: grid;
-    text-align: center;
+    text-align: left;
 }
 
-.buttons a {
-    background-color: #D07CA6;
-    color: white;
+.networks a {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #C36796;
     text-decoration: none;
-    padding: 15px 50px;
-    margin: 5px;
-    border-radius: 30px;
-}
-
-.buttons a:hover {
-    background-color: #ef9A9A;
-    transition: 500ms;
 }
