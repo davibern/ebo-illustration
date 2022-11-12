@@ -3,7 +3,6 @@
     box-sizing: border-box;
     justify-content: center;
     background-color: #FBDEE8;
-    border: 1px dashed blue;
 }
 
 .content {
@@ -14,6 +13,7 @@
 
 .header {
     text-align: center;
+    color: #C36796;
 }
 
 .body {
@@ -25,9 +25,10 @@
 
 .menu {
     height: auto;
-    width: 100px;
+    width: 150px;
     align-items: center;
     justify-content: center;
+    color: #C36796;
 }
 
 .book {
@@ -35,60 +36,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 5%;
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 500px;
 }
 
-/*.networks {
-    height: 30px;
-    width: 300px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 50px;
+.networks {
+    width: auto;
+    display: grid;
+    text-align: left;
 }
 
 .networks a {
-    margin-bottom: 20px;
-    font-size: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-    transition: transform .3s;
+    padding-bottom: 20px;
+    font-size: 14px;
     color: #C36796;
-}
-
-.networks a:hover {
-    transform: scale(2);
-}
-
-.avatar {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/avatar_ebo_illustration.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}*/
-
-/*.buttons {
-    display: grid;
-    text-align: center;
-}
-
-.buttons a {
-    background-color: #D07CA6;
-    color: white;
     text-decoration: none;
-    padding: 15px 50px;
-    margin: 5px;
-    border-radius: 30px;
 }
-
-.buttons a:hover {
-    background-color: #ef9A9A;
-    transition: 500ms;
-}*/
