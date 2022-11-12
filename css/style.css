@@ -9,8 +9,11 @@
 .content {
     height: auto;
     width: auto;
-    display: grid;
     place-content: center;
+}
+
+.header {
+    text-align: center;
 }
 
 .body {
@@ -22,17 +25,19 @@
 
 .menu {
     height: auto;
-    width: 200px;
-    align-items: left;
-    justify-content: left;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .book {
-    height: auto;
-    width: auto;
-    display: grid;
-    align-items: right;
-    justify-content: right;
+    background-image: url("../img/la_caja_de_gatitos_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5%;
+    width: 800px;
+    height: 600px;
 }
 
 /*.networks {
@@ -55,7 +60,7 @@
 
 .networks a:hover {
     transform: scale(2);
-}*/
+}
 
 .avatar {
     height: 300px;
@@ -67,19 +72,7 @@
     background-size: cover; 
     background-repeat: no-repeat;
     border-radius: 50%;
-}
-
-.book {
-    height: 600px;
-    width: 800px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    background-image: url("../img/la_caja_de_gatitos_home.jpg");
-    background-size: contain;
-    background-position: center center;
-    border-radius: 5%;
-}
+}*/
 
 /*.buttons {
     display: grid;
