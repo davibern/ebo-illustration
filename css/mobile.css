@@ -68,6 +68,27 @@
 	width: 100%;
 }
 
+.social-media {
+	list-style-type: none;
+	display: block;
+	align-items: center;
+	text-align: center;
+	padding: .5em 0;
+}
+
+.social-media li {
+	padding-bottom: 1em;
+}
+
+.social-media li a {
+	text-decoration: none;
+	color: #495057;
+}
+
+.social-media li a:hover {
+	color: #d19069;
+}
+
 .contact-row {
     flex-wrap: wrap;
     padding: 0;
