@@ -6,8 +6,11 @@
     $message = $_POST['message'];
 
     $header = "Mensaje enviado desde la web";
-    //$completeMessage = "De: ".$name."\nEmail: ".$email."\n\nMensaje: ".$message;
 
-    mail($to, $header, $message);
+    if(mail($to, $header, $message)) {
+        echo 'El correo se ha enviado correctamente';
+    } else {
+        echo 'El correo no ha podido enviarse';
+    }
 
    echo "<script>console.log('{$message}');</script>";
