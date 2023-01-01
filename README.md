@@ -2,16 +2,11 @@
 
 Portafolio de Ebo Illustration
 
-![image](https://user-images.githubusercontent.com/13550820/138568225-fc829299-15a5-4585-b0d5-c09f71fff48f.png)
+![image](https://user-images.githubusercontent.com/13550820/210182439-98a034af-8ddc-424c-9b5a-f38b6fdca8b7.png)
 
-## ¿Quién es Ebo?
+## ¿De qué trata este proyecto?
 
-Ilustradora y diseñadora, especializada en:
-
-- Imágenes kawai
-- Regalos únicos e innovadores
-- Impresión de ilustraciones en artículos de regalo
-- Ilustradora de cuentos infantiles
+El proyecto tiene como base la de crear el portafolio de Ebo Illustration y que tenga una carta de presentación.
 
 ## Diseño del portafolio
 
