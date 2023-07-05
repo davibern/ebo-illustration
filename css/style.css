@@ -46,6 +46,18 @@ a {
 	padding: 0 20px;
 }
 
+.container-img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 1.9em;
+	margin-bottom: 1.9em;
+	border-radius: 20px;
+}
+
+.container-img:hover {
+	filter: saturate(180%);
+}
+
 .large {
 	font-size: 1.25rem;
 }
