@@ -38,6 +38,11 @@ a {
 	text-decoration: none;
 }
 
+q {
+	margin: 10px 0;
+	content: open-quote;
+}
+
 /* Utility Classes */
 .container {
 	margin: auto;
