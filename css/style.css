@@ -187,8 +187,11 @@ form .form-control {
 
 .showcase-row {
 	display: flex;
+	justify-content: center;
 	padding: 150px 0;
+	margin-top: -100px;
 }
+
 
 .showcase-row-title p.large {
 	padding-bottom: 15px;
@@ -198,6 +201,17 @@ form .form-control {
 	border-radius: 15%;
 	width: 350px;
 	height: 400px;
+}
+
+.showcase-cell {
+	text-align: center;
+	margin: 0 20px;
+}
+
+.showcase-cell .container-img {
+	border-radius: 15%;
+	width: 350px;
+	height: 300px;
 }
 
 /* Portfolio */
