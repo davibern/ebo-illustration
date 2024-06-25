@@ -27,3 +27,51 @@ body {
 	display: flex;
 	gap: 10px;
 }
+
+/* Main */
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 16px;
+}
+
+.sobremi {
+	grid-column: span 1;
+	grid-row: span 2;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+
+.botica {
+	grid-column: span 1;
+	grid-row: span 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gatitos {
+	grid-column: span 1;
+	grid-row: span 2;
+	display: flex; 
+	align-items:start;
+	justify-content: center;
+}
+
+.ilustraciones {
+	grid-column: span 1;
+	grid-row: span 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contacto {
+	grid-column: span 3;
+	grid-row: span 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
