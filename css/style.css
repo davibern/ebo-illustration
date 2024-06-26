@@ -37,19 +37,23 @@ main {
 
 .container {
 	display: grid;
+	align-items: center;
+	justify-content: center;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 16px;
 }
 
 .sobremi {
+	display: flex;
+	flex-wrap: wrap;
 	grid-column: span 1;
 	grid-row: span 2;
-	display: flex;
-	align-items: start;
-	justify-content: center;
+	min-height: 400px;
 	background-color: rgba(255, 182, 193, 0.5);
 	border-radius: 25px;
+	justify-content: center;
+	align-content: center;
 }
 
 .container .sobremi img {
@@ -57,6 +61,15 @@ main {
 	width: 200px;
 	height: 200px;
 	aspect-ratio: 16/9;
+	display: block;
+	margin: 0 auto;
+}
+
+.container .sobremi p {
+	justify-content: center;
+	text-align: justify;
+	margin: 10px;
+	overflow: hidden;
 }
 
 .botica {
