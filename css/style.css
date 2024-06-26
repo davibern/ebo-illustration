@@ -29,6 +29,12 @@ body {
 }
 
 /* Main */
+main {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -42,6 +48,15 @@ body {
 	display: flex;
 	align-items: start;
 	justify-content: center;
+	background-color: rgba(255, 182, 193, 0.5);
+	border-radius: 25px;
+}
+
+.container .sobremi img {
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	aspect-ratio: 16/9;
 }
 
 .botica {
@@ -50,6 +65,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(195, 108, 230, 0.5);
+	border-radius: 25px;
 }
 
 .gatitos {
@@ -58,6 +75,8 @@ body {
 	display: flex; 
 	align-items:start;
 	justify-content: center;
+	background-color: rgba(71, 153, 230, 0.5);
+	border-radius: 25px;
 }
 
 .ilustraciones {
@@ -66,12 +85,16 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(230, 108, 175, 0.5);
+	border-radius: 25px;
 }
 
 .contacto {
 	grid-column: span 3;
 	grid-row: span 1;
-	display: flex;
+	display: column;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(241, 179, 85, 0.5);
+	border-radius: 25px;
 }
