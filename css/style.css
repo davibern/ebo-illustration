@@ -1,5 +1,6 @@
 body {
-	background-color: rgba(234, 223, 243, 0.514);
+	background-image: linear-gradient(to bottom, rgba(188, 136, 231, 0.514), rgba(255, 255, 255, 0.514));
+	height: 100vh;
 }
 
 /* Header para desktop */
@@ -10,6 +11,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+	transform: translateY(20px);
 	padding-right: 10px;
     padding-left: 10px;
 	width: 80%;
@@ -39,75 +41,44 @@ main {
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	gap: 16px;
+	gap: 24px;
 }
 
-.sobremi {
-	display: flex;
-	flex-wrap: wrap;
-	grid-column: span 1;
-	grid-row: span 2;
-	min-height: 400px;
-	background-color: rgba(255, 182, 193, 0.5);
-	border-radius: 25px;
-	justify-content: center;
-	align-content: center;
-}
-
-.container .sobremi img {
-	border-radius: 100%;
-	width: 200px;
-	height: 200px;
-	aspect-ratio: 16/9;
-	display: block;
-	margin: 0 auto;
-}
-
-.container .sobremi p {
-	justify-content: center;
-	text-align: justify;
-	margin: 10px;
-	overflow: hidden;
+.sobremi  {
+	background-color: rgb(197, 219, 238);
+	border-radius: 15px;
+	padding: 10px 10px 10px 10px;
+	min-height: 250px;
+	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .botica {
-	grid-column: span 1;
-	grid-row: span 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(195, 108, 230, 0.5);
-	border-radius: 25px;
+	background-color: #e4b4b4;
+	border-radius: 15px;
+	padding: 10px 10px 10px 10px;
+	min-height: 250px;
+	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .gatitos {
-	grid-column: span 1;
-	grid-row: span 2;
-	display: flex; 
-	align-items:start;
-	justify-content: center;
-	background-color: rgba(71, 153, 230, 0.5);
-	border-radius: 25px;
+	background-color: #d4f1b8;
+	border-radius: 15px;
+	padding: 10px 10px 10px 10px;
+	min-height: 250px;
+	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .ilustraciones {
-	grid-column: span 1;
-	grid-row: span 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(230, 108, 175, 0.5);
-	border-radius: 25px;
+	background-color: #e4b8f1;
+	border-radius: 15px;
+	padding: 10px 10px 10px 10px;
+	min-height: 250px;
+	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contacto {
-	grid-column: span 3;
-	grid-row: span 1;
-	display: column;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(241, 179, 85, 0.5);
-	border-radius: 25px;
+	width: 80%;
+	margin: 0 auto;
 }
