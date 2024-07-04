@@ -55,11 +55,24 @@ main {
 }
 
 .sobremi  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	background-color: rgb(197, 219, 238);
 	border-radius: 15px;
 	padding: 10px 10px 10px 10px;
 	min-height: 250px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .sobremi img {
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	aspect-ratio: 16/9;
+	display: block;
+	margin: 0 auto;
 }
 
 .botica {
