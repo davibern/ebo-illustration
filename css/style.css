@@ -140,6 +140,7 @@ main {
 }
 
 .contacto {
-	width: 70%;
+	display: flex;
+	width: 60%;
 	margin: 0 auto;
 }
