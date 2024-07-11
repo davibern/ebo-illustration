@@ -60,11 +60,19 @@ main {
 	gap: 24px;
 }
 
+/* Media query para pantallas de móvil */
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .sobremi  {
 	background-color: rgb(197, 219, 238);
 	border-radius: 15px;
 	padding: 10px 10px 10px 10px;
 	min-height: 250px;
+	max-height: 500px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 
 	& h3 {
@@ -86,6 +94,7 @@ main {
 	border-radius: 15px;
 	padding: 10px 10px 10px 10px;
 	min-height: 250px;
+	max-height: 500px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 
 	& h3 {
@@ -107,6 +116,7 @@ main {
 	border-radius: 15px;
 	padding: 10px 10px 10px 10px;
 	min-height: 250px;
+	max-height: 500px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 
 	& h3 {
@@ -128,6 +138,7 @@ main {
 	border-radius: 15px;
 	padding: 10px 10px 10px 10px;
 	min-height: 250px;
+	max-height: 500px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
 
 	& h3 {
