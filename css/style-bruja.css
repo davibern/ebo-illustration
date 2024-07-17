@@ -112,6 +112,12 @@ main {
 	gap: 24px;
 }
 
+.review-gato-tablero-video {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+}
+
 iframe{
 	width: 100%;
 	aspect-ratio: 16/9;
