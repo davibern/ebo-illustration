@@ -61,7 +61,7 @@ main {
 }
 
 /* Media query para pantallas de móvil */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .container {
         grid-template-columns: 1fr;
     }
