@@ -74,22 +74,31 @@ main {
 
 /* Reviews */
 
-.reviews-juego {
+.reviews {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	column-gap: 24px;;
+}
+
+/* Media query para pantallas de móvil */
+@media screen and (max-width: 700px) {
+    .reviews {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query para tabletas */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.review-sponsor {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 24px;
-}
-
-.review-panda-jugon-video {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-}
-
-.review-consola-tablero-web {
-	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	gap: 24px;
 
 	& img {
@@ -100,34 +109,12 @@ main {
 	}
 }
 
-.review-jugando-nuestros-hijos-video {
+.redes-sociales {
 	display: flex;
-	flex-direction: row;
+	text-align: left;
 	gap: 24px;
-}
-
-.review-cuatro-hijos-video {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-}
-
-.review-gato-tablero-video {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-}
-
-.review-desvan-ludico-video {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-}
-
-.review-oreiket-video {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
+	list-style: none;
+	margin: 0;
 }
 
 iframe{
