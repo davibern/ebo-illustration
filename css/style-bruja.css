@@ -141,3 +141,10 @@ iframe{
 		border-radius: 10px;
 	}
 }
+
+/* Media query para tabletas */
+@media screen and (max-width: 1200px) {
+    .festival-cordoba {
+        flex-direction: column;
+    }
+}
