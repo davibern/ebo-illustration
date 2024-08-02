@@ -44,6 +44,10 @@ body {
 	}
 }
 
+header h1 {
+	color: #8836a8;
+}
+
 /* Main */
 main {
 	width: 60%;
@@ -74,6 +78,14 @@ main {
 .como-jugar-juego p {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+article h2 {
+	color: #671072;
+}
+
+article h3 {
+	color: #5f1392;
 }
 
 /* Reviews */
@@ -114,7 +126,7 @@ main {
 }
 
 review header h3 {
-	color: rgb(80, 75, 60);
+	color: rgb(149, 72, 168);
 }
 
 iframe{
