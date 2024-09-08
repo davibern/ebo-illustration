@@ -1,3 +1,4 @@
+/* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -43,6 +44,8 @@ body {
 		color: #692569;
 	}
 }
+
+/* HOME */
 
 /* Main */
 main {
@@ -181,5 +184,77 @@ main {
 
 	& a {
 		text-decoration: none;
+	}
+}
+
+/* SOBRE MI */
+
+.sobre-mi {
+	width: 60%;
+	padding-top: 150px;
+}
+
+.introduccion {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+
+	& div img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+	}
+}
+
+.ilustradora {
+	color: rgba(76, 7, 133, 0.959);
+	font-weight: bold;
+}
+
+.cuento {
+	color: rgba(75, 58, 224, 0.959);
+	font-weight: bold;
+}
+
+.juego {
+	color: rgba(167, 30, 167, 0.808);
+	font-weight: bold;
+}
+
+.intereses {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+
+	& div img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+	}
+}
+
+.creatividad {
+	color: rgba(221, 13, 82, 0.808);
+	font-weight: bold;
+}
+
+.aficciones {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	& div img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
 	}
 }
