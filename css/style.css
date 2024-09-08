@@ -190,9 +190,13 @@ main {
 /* SOBRE MI */
 
 .sobre-mi {
+	width: 60%;
+	padding-top: 150px;
+}
+
+.introduccion {
 	display: flex;
 	flex-direction: row;
-	width: 60%;
 	gap: 40px;
 	justify-content: center;
 	align-items: center;
@@ -217,4 +221,40 @@ main {
 .juego {
 	color: rgba(167, 30, 167, 0.808);
 	font-weight: bold;
+}
+
+.intereses {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+
+	& div img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+	}
+}
+
+.creatividad {
+	color: rgba(221, 13, 82, 0.808);
+	font-weight: bold;
+}
+
+.aficciones {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	& div img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+	}
 }
