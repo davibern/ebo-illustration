@@ -187,9 +187,9 @@ main {
 	}
 }
 
-/* SOBRE MI */
+/* SOBRE MI - GATITOS */
 
-.sobre-mi {
+.main {
 	width: 60%;
 	padding-top: 150px;
 }
@@ -256,5 +256,16 @@ main {
 		width: 200px;
 		height: 200px;
 		border-radius: 100%;
+	}
+}
+
+.entrevista {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+
+	& img {
+		border-radius: 25px;
 	}
 }
