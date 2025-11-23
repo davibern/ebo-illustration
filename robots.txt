@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
 User-agent: *
 Allow: /
 
-Sitemap: http://www.eboillustration.es/sitemap.xml
+Sitemap: https://eboillustration.es/sitemap.xml

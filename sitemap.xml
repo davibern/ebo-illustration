@@ -4,19 +4,42 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://eboillustration.es/</loc>
-  <lastmod>2023-07-15T13:30:21+00:00</lastmod>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>1.0</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/sobre-mi.html</loc>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/ilustraciones.html</loc>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>https://eboillustration.es/la-botica-de-la-bruja.html</loc>
-  <lastmod>2023-07-15T13:30:21+00:00</lastmod>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>0.9</priority>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>https://eboillustration.es/la-caja-de-los-gatitos.html</loc>
-  <lastmod>2023-07-15T13:30:21+00:00</lastmod>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>0.9</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/verkami-la-botica-de-la-bruja.html</loc>
+  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>yearly</changefreq>
 </url>
 
 </urlset>
