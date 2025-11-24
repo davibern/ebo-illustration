@@ -1,0 +1,362 @@
+/* Importar estilos base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom, rgba(188, 136, 231, 0.514), rgba(255, 255, 255, 0.514));
+    min-height: 100vh;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-nav {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    transform: translateY(20px);
+    padding: 10px 20px;
+    width: 60%;
+    color: #413a3a;
+}
+
+.header-nav h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-nav nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header-nav nav a {
+    text-decoration: none;
+    color: #692569;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.header-nav nav a:hover {
+    color: #b11bc5;
+}
+
+/* Header responsive */
+@media screen and (max-width: 800px) {
+    .header-nav {
+        flex-direction: column;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+
+    .header-nav h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* YouTube Container */
+.youtube-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .youtube-container {
+        width: 90%;
+    }
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #413a3a;
+    margin: 0;
+}
+
+/* Playlists Grid */
+.playlists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .playlists-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Playlist Card */
+.playlist-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.playlist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.playlist-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.playlist-thumbnail {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio */
+    overflow: hidden;
+    background-color: #f4b8b8;
+}
+
+.playlist-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 32, 32, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.playlist-card:hover .play-overlay {
+    opacity: 1;
+}
+
+.play-overlay i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.play-overlay span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Playlist Info */
+.playlist-info {
+    padding: 20px;
+}
+
+.playlist-info h2 {
+    color: #8b2020;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.playlist-info p {
+    color: #413a3a;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.playlist-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #692569;
+    font-size: 0.9rem;
+}
+
+.playlist-meta i {
+    color: #8b2020;
+}
+
+/* Playlist Detail Page */
+.playlist-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .playlist-container {
+        width: 90%;
+    }
+}
+
+.playlist-header {
+    margin-bottom: 40px;
+}
+
+.playlist-banner {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.playlist-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.playlist-description {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-description h2 {
+    color: #8b2020;
+    margin: 0 0 15px 0;
+}
+
+.playlist-description p {
+    color: #413a3a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.view-playlist-btn {
+    display: inline-block;
+    background-color: #8b2020;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-playlist-btn:hover {
+    background-color: #b11bc5;
+    transform: scale(1.05);
+}
+
+.view-playlist-btn i {
+    margin-right: 8px;
+}
+
+/* Videos Section */
+.videos-section {
+    margin-top: 40px;
+}
+
+.videos-section h2 {
+    color: #8b2020;
+    margin-bottom: 10px;
+}
+
+.videos-note {
+    color: #692569;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Video Placeholder */
+.video-placeholder {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-content i {
+    color: #8b2020;
+    margin-bottom: 20px;
+}
+
+.placeholder-content p {
+    color: #413a3a;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.youtube-link-btn {
+    display: inline-block;
+    background-color: #8b2020;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.youtube-link-btn:hover {
+    background-color: #b11bc5;
+    transform: scale(1.05);
+}
+
+.youtube-link-btn i {
+    margin-right: 8px;
+}
+
+/* Footer */
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: 50px auto 0;
+    padding: 25px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: #692569;
+    transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+    color: #b11bc5;
+}
+
+@media screen and (max-width: 800px) {
+    .contacto {
+        width: 90%;
+    }
+}

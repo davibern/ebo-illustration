@@ -7,7 +7,7 @@
 
 <url>
   <loc>https://eboillustration.es/</loc>
-  <lastmod>2025-11-23T10:47:00+00:00</lastmod>
+  <lastmod>2025-11-24T19:30:00+00:00</lastmod>
   <priority>1.0</priority>
   <changefreq>monthly</changefreq>
 </url>
@@ -40,6 +40,18 @@
   <lastmod>2025-11-23T10:47:00+00:00</lastmod>
   <priority>0.7</priority>
   <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/youtube.html</loc>
+  <lastmod>2025-11-24T19:30:00+00:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/youtube-playlist.html</loc>
+  <lastmod>2025-11-24T19:30:00+00:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
 </url>
 
 </urlset>
