@@ -48,7 +48,13 @@
             },
             "url": "https://eboillustration.es/youtube-cozy-keep.html"
         }
-        </script>
+    </script>
+
+    <!-- Configuración de API Keys (no incluido en git) -->
+    <script src="js/config.js"></script>
+
+    <!-- YouTube API Integration -->
+    <script src="js/youtube-api.js"></script>
 </head>
 
 <body>
@@ -93,17 +99,7 @@
             </p>
 
             <div class="videos-grid">
-                <!-- Los vídeos se mostrarán aquí cuando se integre con la API de YouTube -->
-                <article class="video-placeholder">
-                    <div class="placeholder-content">
-                        <i class="fa-brands fa-youtube fa-3x"></i>
-                        <p>Visita la lista en YouTube para ver todos los vídeos</p>
-                        <a href="https://www.youtube.com/playlist?list=PLDzy6JiRB_XEIVfKOEuWlB65e0hD3ThWf"
-                            target="_blank" rel="noopener noreferrer" class="youtube-link-btn">
-                            <i class="fa-brands fa-youtube"></i> Ir a YouTube
-                        </a>
-                    </div>
-                </article>
+                <!-- Los vídeos se cargarán dinámicamente desde la API de YouTube -->
             </div>
         </section>
     </main>
