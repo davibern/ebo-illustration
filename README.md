@@ -14,6 +14,7 @@ Realizado íntegramente en:
 
 - HTML
 - CSS
+- JAVASCRIPT
 
 ## Versión responsive
 
