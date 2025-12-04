@@ -58,8 +58,8 @@ main {
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
 	gap: 24px;
 }
 
@@ -181,6 +181,7 @@ main {
 	min-height: 250px;
 	max-height: 500px;
 	box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.1);
+	grid-column: 1 / -1;
 
 	& h3 {
 		color: #8b2020;
