@@ -4,10 +4,10 @@
  * 
  * ⚠️ IMPORTANTE: La API key se carga desde js/config.js
  * Asegúrate de tener el archivo config.js configurado (ver config.example.js)
+ * 
+ * ⚠️ IMPORTANTE: El ID de la playlist debe definirse en la página antes de cargar este script:
+ * <script>window.YOUTUBE_PLAYLIST_ID = 'TU_PLAYLIST_ID';</script>
  */
-
-// ID de la lista de reproducción de Cozy Keep
-const PLAYLIST_ID = 'PLDzy6JiRB_XEIVfKOEuWlB65e0hD3ThWf';
 
 // URL base de la API de YouTube
 const YOUTUBE_API_BASE = 'https://www.googleapis.com/youtube/v3';
@@ -59,11 +59,12 @@ function truncateText(text, maxLength) {
 async function fetchPlaylistVideos() {
     let allVideos = [];
     let nextPageToken = '';
+    const playlistId = window.YOUTUBE_PLAYLIST_ID;
 
     try {
         // Obtener todos los items de la playlist (con paginación)
         do {
-            const playlistUrl = `${YOUTUBE_API_BASE}/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId=${PLAYLIST_ID}&key=${CONFIG.YOUTUBE_API_KEY}${nextPageToken ? '&pageToken=' + nextPageToken : ''}`;
+            const playlistUrl = `${YOUTUBE_API_BASE}/playlistItems?part=snippet,contentDetails&maxResults=50&playlistId=${playlistId}&key=${CONFIG.YOUTUBE_API_KEY}${nextPageToken ? '&pageToken=' + nextPageToken : ''}`;
 
             const response = await fetch(playlistUrl);
 
@@ -164,14 +165,18 @@ function showLoading() {
  */
 function showError(message) {
     const videosGrid = document.querySelector('.videos-grid');
+    const playlistId = window.YOUTUBE_PLAYLIST_ID;
+
     videosGrid.innerHTML = `
         <div class="error-container">
             <i class="fa-solid fa-exclamation-triangle fa-3x"></i>
             <p class="error-message">${message}</p>
             <p class="error-hint">Por favor, verifica la configuración de la API key o visita la lista directamente en YouTube.</p>
-            <a href="https://www.youtube.com/playlist?list=${PLAYLIST_ID}" target="_blank" rel="noopener noreferrer" class="youtube-link-btn">
+            ${playlistId ? `
+            <a href="https://www.youtube.com/playlist?list=${playlistId}" target="_blank" rel="noopener noreferrer" class="youtube-link-btn">
                 <i class="fa-brands fa-youtube"></i> Ver en YouTube
             </a>
+            ` : ''}
         </div>
     `;
 }
@@ -215,6 +220,11 @@ async function initializePlaylist() {
 
     if (!CONFIG.YOUTUBE_API_KEY || CONFIG.YOUTUBE_API_KEY === 'TU_API_KEY_AQUI') {
         showError('⚠️ API Key no configurada. Por favor, configura tu API key de YouTube en el archivo js/config.js');
+        return;
+    }
+
+    if (!window.YOUTUBE_PLAYLIST_ID) {
+        showError('⚠️ ID de lista de reproducción no definido. Por favor define window.YOUTUBE_PLAYLIST_ID en el HTML antes de cargar este script.');
         return;
     }
 
