@@ -53,5 +53,11 @@
   <priority>0.7</priority>
   <changefreq>weekly</changefreq>
 </url>
+<url>
+  <loc>https://eboillustration.es/youtube-strange-antiquities.html</loc>
+  <lastmod>2025-12-11T15:40:00+00:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
 
 </urlset>
