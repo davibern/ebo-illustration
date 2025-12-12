@@ -2,7 +2,7 @@
 
 Portafolio de Ebo Illustration
 
-![image](https://github.com/user-attachments/assets/047736db-396e-414b-bf7a-7d5aae580875)
+<img width="1131" height="861" alt="image" src="https://github.com/user-attachments/assets/6dbdc57b-98b8-4726-8d49-8bff7b6983c7" />
 
 ## ¿De qué trata este proyecto?
 
@@ -18,4 +18,4 @@ Realizado íntegramente en:
 
 ## Versión responsive
 
-![image](https://github.com/user-attachments/assets/439cf172-7157-41b9-b13a-36aeec36d785)
+<img width="343" height="616" alt="image" src="https://github.com/user-attachments/assets/862564ea-2872-474d-a38c-1aa7685d136c" />
