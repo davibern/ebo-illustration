@@ -91,18 +91,28 @@ async function fetchPlaylistVideos() {
         const videosData = await videosResponse.json();
 
         // Combinar datos de playlist con detalles de vídeos
-        const videosWithDetails = allVideos.map(item => {
-            const videoDetails = videosData.items.find(v => v.id === item.contentDetails.videoId);
-            return {
-                id: item.contentDetails.videoId,
-                title: item.snippet.title,
-                description: item.snippet.description,
-                thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
-                publishedAt: item.snippet.publishedAt,
-                duration: videoDetails?.contentDetails?.duration || 'PT0S',
-                viewCount: videoDetails?.statistics?.viewCount || '0'
-            };
-        });
+        // Filtrar vídeos eliminados (aquellos que no tienen detalles disponibles)
+        const videosWithDetails = allVideos
+            .map(item => {
+                const videoDetails = videosData.items.find(v => v.id === item.contentDetails.videoId);
+
+                // Si no hay detalles del vídeo, significa que fue eliminado
+                if (!videoDetails) {
+                    console.warn(`Vídeo eliminado o no disponible: ${item.snippet.title} (ID: ${item.contentDetails.videoId})`);
+                    return null;
+                }
+
+                return {
+                    id: item.contentDetails.videoId,
+                    title: item.snippet.title,
+                    description: item.snippet.description,
+                    thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
+                    publishedAt: item.snippet.publishedAt,
+                    duration: videoDetails.contentDetails.duration,
+                    viewCount: videoDetails.statistics.viewCount || '0'
+                };
+            })
+            .filter(video => video !== null); // Eliminar vídeos nulos (eliminados)
 
         return videosWithDetails;
 
