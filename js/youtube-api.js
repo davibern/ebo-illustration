@@ -96,8 +96,14 @@ async function fetchPlaylistVideos() {
             .map(item => {
                 const videoDetails = videosData.items.find(v => v.id === item.contentDetails.videoId);
 
-                // Si no hay detalles del vídeo, significa que fue eliminado
-                if (!videoDetails) {
+                // Verificar si el vídeo fue eliminado o es privado
+                const isDeletedVideo = item.snippet.title === 'Deleted video' ||
+                    item.snippet.title === 'Private video' ||
+                    item.snippet.description === 'This video is unavailable.' ||
+                    item.snippet.description === 'This video is private.';
+
+                // Si no hay detalles del vídeo o está marcado como eliminado/privado
+                if (!videoDetails || isDeletedVideo) {
                     console.warn(`Vídeo eliminado o no disponible: ${item.snippet.title} (ID: ${item.contentDetails.videoId})`);
                     return null;
                 }
