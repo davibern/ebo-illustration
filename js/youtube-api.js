@@ -79,16 +79,29 @@ async function fetchPlaylistVideos() {
         } while (nextPageToken);
 
         // Obtener detalles de los vídeos (duración, estadísticas)
-        const videoIds = allVideos.map(item => item.contentDetails.videoId).join(',');
-        const videosUrl = `${YOUTUBE_API_BASE}/videos?part=contentDetails,statistics&id=${videoIds}&key=${CONFIG.YOUTUBE_API_KEY}`;
-
-        const videosResponse = await fetch(videosUrl);
-
-        if (!videosResponse.ok) {
-            throw new Error(`Error al obtener detalles de vídeos: ${videosResponse.status}`);
+        // La API de YouTube tiene un límite de 50 IDs por petición, por lo que
+        // dividimos el array en lotes (chunks) de máximo 50 IDs
+        const CHUNK_SIZE = 50;
+        const allVideoIds = allVideos.map(item => item.contentDetails.videoId);
+        const videoIdChunks = [];
+        for (let i = 0; i < allVideoIds.length; i += CHUNK_SIZE) {
+            videoIdChunks.push(allVideoIds.slice(i, i + CHUNK_SIZE));
         }
 
-        const videosData = await videosResponse.json();
+        const videosDetailPromises = videoIdChunks.map(chunk => {
+            const videosUrl = `${YOUTUBE_API_BASE}/videos?part=contentDetails,statistics&id=${chunk.join(',')}&key=${CONFIG.YOUTUBE_API_KEY}`;
+            return fetch(videosUrl).then(res => {
+                if (!res.ok) {
+                    throw new Error(`Error al obtener detalles de vídeos: ${res.status}`);
+                }
+                return res.json();
+            });
+        });
+
+        const videosDataArray = await Promise.all(videosDetailPromises);
+        const videosData = {
+            items: videosDataArray.flatMap(data => data.items)
+        };
 
         // Combinar datos de playlist con detalles de vídeos
         // Filtrar vídeos eliminados (aquellos que no tienen detalles disponibles)
