@@ -77,5 +77,11 @@
   <priority>0.7</priority>
   <changefreq>weekly</changefreq>
 </url>
+<url>
+  <loc>https://eboillustration.es/ebojuega/gameplays/rusty-lake-hotel.html</loc>
+  <lastmod>2026-03-05T17:42:00+01:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
 
 </urlset>
