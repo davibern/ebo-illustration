@@ -83,5 +83,17 @@
   <priority>0.7</priority>
   <changefreq>weekly</changefreq>
 </url>
+<url>
+  <loc>https://eboillustration.es/ebojuega/gameplays/rusty-lake-roots.html</loc>
+  <lastmod>2026-05-05T17:50:00+01:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/ebojuega/gameplays/duck-detective-the-secret-salami.html</loc>
+  <lastmod>2026-05-05T17:50:00+01:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
 
 </urlset>
