@@ -42,6 +42,12 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
+  <loc>https://eboillustration.es/ilustraciones.html</loc>
+  <lastmod>2026-05-05T17:50:00+01:00</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
   <loc>https://eboillustration.es/ebojuega/</loc>
   <lastmod>2026-02-27T16:00:00+01:00</lastmod>
   <priority>0.8</priority>
