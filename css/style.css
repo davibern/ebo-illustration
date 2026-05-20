@@ -323,3 +323,242 @@ main {
 		border-radius: 25px;
 	}
 }
+
+/* ==========================================================================
+   BANNER LA BOTICA DE LA BRUJA 2ª EDICIÓN
+   ========================================================================== */
+
+.banner-botica-2 {
+	grid-column: 1 / -1;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(-45deg, #2e1065, #4c1d95, #115e59, #0f766e);
+	background-size: 400% 400%;
+	animation: magicGradient 12s ease infinite;
+	border-radius: 15px;
+	padding: 24px 32px;
+	text-decoration: none;
+	color: #ffffff;
+	box-shadow: 3px 8px 25px rgba(76, 29, 149, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	position: relative;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+	gap: 32px;
+}
+
+@keyframes magicGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.banner-botica-2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.12) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	transform: skewX(-25deg);
+	transition: none;
+	pointer-events: none;
+}
+
+.banner-botica-2:hover::before {
+	left: 150%;
+	transition: 0.8s ease-in-out;
+}
+
+.banner-botica-2:hover {
+	transform: translateY(-4px);
+	box-shadow: 3px 12px 30px rgba(76, 29, 149, 0.25), 0 0 20px rgba(17, 94, 89, 0.15);
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.banner-image-container {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-game-img {
+	width: 120px;
+	height: auto;
+	object-fit: contain;
+	filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+	transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.banner-botica-2:hover .banner-game-img {
+	transform: scale(1.1) rotate(6deg);
+}
+
+.banner-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-align: left;
+}
+
+.banner-badge {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background-color: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #dec5f3;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 4px 10px;
+	border-radius: 20px;
+	font-family: 'Roboto Condensed', system-ui, -apple-system, sans-serif;
+}
+
+.badge-dot {
+	width: 6px;
+	height: 6px;
+	background-color: #2dd4bf;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0 0 8px #2dd4bf;
+	animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.7);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 6px rgba(45, 212, 191, 0);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(45, 212, 191, 0);
+	}
+}
+
+.banner-title {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 800;
+	color: #ffffff;
+	font-family: 'Roboto Condensed', system-ui, -apple-system, sans-serif;
+	letter-spacing: -0.5px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.edition-tag {
+	font-size: 13px;
+	background: linear-gradient(90deg, #fcd34d, #f59e0b);
+	color: #1e1b4b;
+	padding: 2px 8px;
+	border-radius: 6px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.banner-description {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #dec5f3;
+	max-width: 800px;
+}
+
+.banner-cta {
+	margin-top: 6px;
+}
+
+.banner-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background-color: #ffffff;
+	color: #4c1d95;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 10px 22px;
+	border-radius: 30px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.banner-btn i {
+	transition: transform 0.3s ease;
+}
+
+.banner-botica-2:hover .banner-btn {
+	background-color: #dec5f3;
+	color: #2e1065;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.banner-botica-2:hover .banner-btn i {
+	transform: translateX(4px);
+}
+
+/* Responsive Banner */
+@media screen and (max-width: 900px) {
+	.banner-title {
+		font-size: 20px;
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+	.banner-botica-2 {
+		padding: 20px 24px;
+		gap: 20px;
+	}
+	.banner-game-img {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.banner-botica-2 {
+		flex-direction: column;
+		text-align: center;
+		padding: 24px 20px;
+		gap: 16px;
+	}
+	.banner-image-container {
+		order: -1;
+	}
+	.banner-content {
+		align-items: center;
+	}
+	.banner-badge {
+		align-self: center;
+	}
+	.banner-title {
+		justify-content: center;
+	}
+	.banner-description {
+		font-size: 13px;
+	}
+}
