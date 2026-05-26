@@ -58,16 +58,10 @@ main {
 }
 
 .container {
-	display: flex;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: stretch;
 	justify-content: center;
-}
-
-/* Media query para pantallas de móvil */
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Introducción juego */
