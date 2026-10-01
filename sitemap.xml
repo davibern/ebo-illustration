@@ -55,7 +55,7 @@
 </url>
 <url>
   <loc>https://eboillustration.es/ebojuega/</loc>
-  <lastmod>2026-05-25T12:00:00+01:00</lastmod>
+  <lastmod>2026-10-01T12:00:00+01:00</lastmod>
   <priority>0.8</priority>
   <changefreq>weekly</changefreq>
 </url>
@@ -116,6 +116,18 @@
 <url>
   <loc>https://eboillustration.es/ebojuega/gameplays/darkest-dungeon.html</loc>
   <lastmod>2026-05-25T12:00:00+01:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/ebojuega/gameplays/frost-punk.html</loc>
+  <lastmod>2026-05-25T12:00:00+01:00</lastmod>
+  <priority>0.7</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://eboillustration.es/ebojuega/gameplays/graveyard-keeper-2.html</loc>
+  <lastmod>2026-10-01T12:00:00+01:00</lastmod>
   <priority>0.7</priority>
   <changefreq>weekly</changefreq>
 </url>
